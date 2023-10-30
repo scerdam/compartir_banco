@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number: 1
+  type_account: MyString
+  user: one
+  bank: one
+  alias: MyString
+  pinned: false
+
+two:
+  name: MyString
+  number: 1
+  type_account: MyString
+  user: two
+  bank: two
+  alias: MyString
+  pinned: false
