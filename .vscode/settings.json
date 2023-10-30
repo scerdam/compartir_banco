@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "models>user"
+        "models>user",
+        "models>account"
     ]
 }
