@@ -10,6 +10,14 @@
       </ul>
     </div>
   <% end %>
+  <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+<select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  <option selected>Choose a country</option>
+  <option value="US">United States</option>
+  <option value="CA">Canada</option>
+  <option value="FR">France</option>
+  <option value="DE">Germany</option>
+</select>
 
   <div class="my-5">
     <%= form.label :name %>
@@ -26,25 +34,13 @@
     <%= form.text_field :type_account, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
 
   <div class="my-5">
-    <%= form.label :bank_id %>
-    <%= form.text_field :bank_id, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.label :bank_id, class: "block mb-2 text-sm font-medium text-gray-900 dark:text-white" %>
+    <%= form.select :bank_id, Bank.all.collect {|b| [ b.name, b.id ] }, { class: 'bg-gray-50 ' } %>
+
   </div>
 
-  <div class="my-5">
-    <%= form.label :alias %>
-    <%= form.text_field :alias, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
-
-  <div class="my-5">
-    <%= form.label :pinned %>
-    <%= form.check_box :pinned, class: "block mt-2 h-5 w-5" %>
-  </div>
 
   <div class="inline">
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>

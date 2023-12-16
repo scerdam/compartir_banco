@@ -1,6 +1,10 @@
 {
     "conventionalCommits.scopes": [
         "models>user",
-        "models>account"
+        "models>account",
+        "models>bank",
+        "views>devise",
+        "root",
+        "views>account"
     ]
 }
