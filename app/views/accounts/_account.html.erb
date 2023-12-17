@@ -1,21 +1,4 @@
-
-
-<span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-  <span class="font-light ">Transfiere</span><span class="font-bold">Ya</span><span class="font-bold ">!</span>
-</span>
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-<h2 class="mb-4 leading-none tracking-tight text-blue-700  md:text-sm lg:text-xl dark:text-white">
-  <span class="font-normal ">Escanea, copia y pega directamente en tu app del banco!</span>
-</h2>
-<br>
 <div id="<%= dom_id account %>">
-
-
   <div class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div class="float-right py-2">
       <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -43,16 +26,10 @@
     <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">
       <%= account.user.email %>
     </p>
-
-    
   </div>
-  <div class="flex justify-center items-center pt-12"> 
-        <img src="https://pic.onlinewebfonts.com/thumbnails/icons_462691.svg"
-            width="300"
-             alt="gfg"> 
-    </div> 
-  <br>
-  <br>
+  <div class="flex justify-center items-center py-12"> 
+        <img src="https://pic.onlinewebfonts.com/thumbnails/icons_462691.svg" width="300" alt="gfg"> 
+  </div> 
   <% if action_name != "show" %>
     <%= link_to "Show this account", account, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to "Edit this account", edit_account_path(account), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
