@@ -33,9 +33,14 @@ en:
   activerecord:
     attributes:
       account:
-        name: Alias
-        type_account: Type account
+        name: Nombre
+        number: N° de cuenta
+        type_account: Tipo de cuenta
+        rut: RUT
+      bank:
+        name: Banco
       user:
+        email: Correo electrónico
         rut: RUT
         first_name: Nombre
         last_name: Apellido
