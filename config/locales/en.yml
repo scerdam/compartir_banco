@@ -32,11 +32,19 @@
 en:
   activerecord:
     attributes:
+      account:
+        name: Alias
+        type_account: Tipo de cuenta
       user:
         rut: RUT
         first_name: Name
         last_name: Surname
     models:
+      account:
+        one: Account
+        others: Accounts
       user:
         one: User
         other: Users
+  main_menu:
+    home: My accounts
