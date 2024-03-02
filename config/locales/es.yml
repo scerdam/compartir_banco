@@ -34,9 +34,9 @@ en:
     attributes:
       user:
         rut: RUT
-        first_name: Name
-        last_name: Surname
+        first_name: Nombre
+        last_name: Apellido
     models:
       user:
-        one: User
-        other: Users
+        one: Usuario
+        other: Usuarios
